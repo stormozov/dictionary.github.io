@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="nofollow"/>
+    <title> English-Russian dictionary </title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dictionary">
+        <div class="dictionary__inner-wrapp">
+            <!-- Info block : Start -->
+            <div class="dictionary__info-block">
+                <h1> Самый лучший русско-английский словарь </h1>
+                <p class="developer"> Словарь реализовал  <a href="https://freelance.ru/LuffyMD" target="_blank" rel="nofollow"> Sergey Tormozov </a> </p>
+            </div>
+            <div class="dictionary__tip">
+                <p>
+                    Введите слово на английском в левом поле ввода, затем его перевод в правом поле ввода. После нажмите на кнопку и слова добавятся в словарь.
+                </p>
+            </div>
+            <!-- Info block : End -->
+            <!-- Inputs : Start -->
+            <div class="dictionary__label-wrap">
+                <label>
+                    Англ. слово:
+                    <input type="text" id="input-eng">
+                </label>
+                <label>
+                    Перевод на русском:
+                    <input type="text" id="input-rus">
+                </label>
+            </div>
+            <!-- Inputs : End -->
+            <div class="dictionary__error-block"></div>
+            <!-- Button Add and Clear : Start -->
+            <div class="btn-add-wrap">
+                <button class="btn btn-add" id="btn"> Добавить слово </button>
+                <button class="btn btn-clear" id="btnClear"> х Очистить словарь </button>
+            </div>
+            <!-- Button Add and Clear : End -->
+            <div class="line"></div>
+            <!-- Table : Start -->
+            <div class="dictionary__table">
+                <p id="cleanTable" class="dictionary__table-text"> Ваш словарь пустой &#128580; </p>
+                <table id="tableHeader" class="dictionary__table-header">
+                    <tr><th> Слово на английском </th><th colspan="2"> Слово на русском </th></tr>
+                </table>
+                <table id="tableBody"></table>
+            </div>      
+            <!-- Table : End -->      
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

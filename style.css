@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .developer a { font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 700; }
+
+h1 {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+button, a {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button.btn {
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+button.btn-add {
+    font-weight: 800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(109, 18, 255);
+}
+
+button.btn-clear {
+    display: none;
+    font-weight: 800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(200, 200, 200);
+    margin-top: 10px;
+}
+
+button.btn-clear.active {
+    display: block;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #efefef;
+    margin: 30px 0;
+}
+
+/* Table styles: Start */
+table {
+    width: 100%;
+}
+
+table th {
+    width: 50%;
+    color: white;
+    background-color: #2f2c2c;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+table td {
+    width: 52%;
+    padding: 10px;
+    background-color: #efefef;
+}
+
+.dictionary__table-text {
+    text-align: center;
+}
+
+.dictionary__table-header {
+    display: none;
+}
+
+.dictionary__table.active .dictionary__table-header {
+    display: table;
+}
+
+.dictionary__table.active .dictionary__table-text {
+    display: none;
+}
+
+.table-btn-delete {
+    width: 4%;
+}
+
+.table-btn-delete button {
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.table-btn-delete button:hover {
+    color: red;
+}
+/* Table styles: End */
+.dictionary {
+    padding: 60px;
+    margin: 0 auto;
+    max-width: 750px;
+    width: 100%;
+}
+
+.developer {
+    text-align: center;
+}
+
+.developer a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.developer a:hover {
+    color: rgb(109, 18, 255);
+}
+
+.dictionary__tip {
+    padding: 15px;
+    margin: 30px 0;
+    background-color: #efefef;
+    border-radius: 15px;
+}
+
+.dictionary__tip p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dictionary__label-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;    
+}
+
+.btn-add-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+label:not(:last-child) {
+    margin-right: 20px;
+}
+
+input {
+    border: transparent;
+    background-color: #efefef;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+.dictionary__error-block {
+    color: red;
+    text-align: center;
+}
